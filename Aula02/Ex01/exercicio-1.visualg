@@ -1,0 +1,8 @@
+algoritmo "Primeiro Programa"
+
+
+inicio
+
+  escreva("ola mundo!!!")
+
+fimalgoritmo

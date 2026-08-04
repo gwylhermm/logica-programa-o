@@ -1,0 +1,17 @@
+algoritmo "exercicio-5"
+var
+  numero: inteiro
+
+inicio
+
+  escreval("digite um numero:")
+  leia (numero)
+  
+  se (numero >= 0) entao
+    escreval("o numero digitado é positivo")
+  senao
+    escreval("o numero digitado é negativo") 
+  fimse  
+
+
+fimalgoritmo

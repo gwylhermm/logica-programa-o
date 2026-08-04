@@ -1,0 +1,16 @@
+algoritmo "exercicio-4"
+var
+  idade: inteiro
+
+inicio
+
+  escreval("digite sua idade:")
+  leia (idade)
+  se (idade >= 18) entao
+     escreval("maior de idade, ja pode dirigir!")
+  senao
+    escreval("menor de idade, nao pode dirigir!") 
+  fimse  
+
+
+fimalgoritmo

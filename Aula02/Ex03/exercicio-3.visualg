@@ -1,0 +1,11 @@
+algoritmo "exercicio-3"
+var
+  numero: inteiro
+
+inicio
+
+  escreval("digite um numero inteiro:")
+  leia (numero)
+  escreva("o dobro do numero digitado é: "numero * 2)
+
+fimalgoritmo

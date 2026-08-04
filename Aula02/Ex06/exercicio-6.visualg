@@ -1,0 +1,44 @@
+algoritmo "exercicio-6"
+var
+  saldo: real
+  login: caracter
+  senha: caracter
+  saque: real
+
+
+inicio
+  
+  senha <- "ugauga"
+  saldo <- 100
+  saque <- 0
+
+  escreval("digite seu login: ")
+  leia (login)
+  escreval("ola " + login ", seja bem vindo!")
+  escreval("digite sua senha:")
+  leia(senha)
+
+  repita
+    escreval("senha incorreta, tente novamente:")
+    leia(senha)
+  ate senha = "ugauga" 
+
+  escreval("bem vindo, seu saldo é de:R$" + saldo)
+  escreval("digite o valor do saque: ")
+  leia (saque)
+  saldo <- saldo - saque
+
+  se (saldo <= 0) entao
+    escreval("saldo insuficiente!")
+  senao
+    escreval("saque realizado com sucesso!")
+    escreval("saldo atualizado:R$" + saldo)  
+  fimse  
+
+
+
+
+  
+  
+
+fimalgoritmo
