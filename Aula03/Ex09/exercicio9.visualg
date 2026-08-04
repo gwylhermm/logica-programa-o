@@ -1,0 +1,20 @@
+algoritmo "calculo-descontos"
+
+var
+  valor, percentual, desconto, valorFinal: real
+
+inicio
+
+   escreval("Digite o valor do produto: ")
+   leia(valor)
+
+   escreval("digite o percentual de desconto %: ")
+   leia(percentual)
+
+   desconto <- valor * percentual / 100
+   valorFinal <- valor - desconto
+
+   escreval("voce obteve um desconto de:R$", desconto)
+   escreval("total a pagar com descontos:R$",valorFinal)
+
+fimalgoritmo

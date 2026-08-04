@@ -1,0 +1,15 @@
+algoritmo "conversor-temperatura"
+
+var
+  ce, fah: real
+
+inicio
+
+   escreval("Digite a temperatura atual em Celsius: ")
+   leia(ce)
+
+   fah <- (ce * 9 / 5) + 32
+
+   escreval("A temperatura atual em Fahrenheit é de: ", fah)
+
+fimalgoritmo

@@ -1,0 +1,18 @@
+algoritmo "consumo-combustivel"
+
+var
+  consumo, litros, distancia: real
+
+inicio
+
+   escreval("Digite a distancia da viagem: ")
+   leia(distancia)
+
+   escreval("Digite a quantidade de litros disponivel: ")
+   leia(litros)
+
+   consumo <- distancia / litros
+
+   escreval("Consumo total da viagem: ", consumo)
+
+fimalgoritmo
