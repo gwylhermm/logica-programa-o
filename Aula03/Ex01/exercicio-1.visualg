@@ -1,0 +1,13 @@
+algoritmo "exercicio-1"
+
+var
+  numero: inteiro
+
+inicio
+
+  escreval("Digite um numero inteiro: ")
+  leia(numero)
+  escreval("o dobro do numero é:" + (numero * 2))
+  escreval("o triplo do numero é:" + (numero * 3))
+
+fimalgoritmo

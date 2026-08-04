@@ -1,0 +1,19 @@
+algoritmo "salario_mensal"
+
+var
+   valorHora, salario : real
+   horas : inteiro
+
+inicio
+
+   escreva("Digite o valor da hora trabalhada: R$ ")
+   leia(valorHora)
+
+   escreva("Digite a quantidade de horas trabalhadas no mês: ")
+   leia(horas)
+
+   salario <- valorHora * horas
+
+   escreval("Salário mensal: R$ ", salario)
+
+fimalgoritmo

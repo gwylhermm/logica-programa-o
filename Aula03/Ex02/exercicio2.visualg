@@ -1,0 +1,13 @@
+algoritmo "exercicio2"
+
+var
+  numero: inteiro
+
+inicio
+
+  escreval("Digite um numero: ")
+  leia(numero)
+  escreval("o antecessor do numero " + numero " é " (numero - 1))
+  escreval("o sucessor do numero " + numero " é " (numero + 1))
+
+fimalgoritmo

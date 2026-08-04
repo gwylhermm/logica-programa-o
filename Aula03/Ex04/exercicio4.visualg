@@ -1,0 +1,17 @@
+algoritmo "exercicio4"
+
+var
+  area, altura, base: real
+
+inicio
+
+  escreval("Digite comprimento da base do seu triangulo: ")
+  leia(base)
+  escreval("digite a altura do seu triangulo: ")
+  leia(altura)
+
+  area <- (base * altura) / 2
+
+  escreval("a area do seu triangulo é de: " + area)
+
+fimalgoritmo
