@@ -1,0 +1,25 @@
+algoritmo "multiplosDe5"
+
+var
+   N, i: inteiro
+
+inicio
+
+   escreval("Digite um número inteiro: ")
+   leia(N)
+
+   i <- 1
+
+   escreval("Múltiplos de 5 entre 1 e ", N, ":")
+
+   enquanto (i <= N) faca
+
+      se (i / 5 = int(i / 5)) entao
+         escreval(i)
+      fimse
+
+      i <- i + 1
+
+   fimenquanto
+
+fimalgoritmo

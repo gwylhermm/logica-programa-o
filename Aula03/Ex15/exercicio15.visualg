@@ -1,0 +1,28 @@
+algoritmo "MaiorMenorDeIdade"
+
+var
+   i, maior, menor, idade: inteiro
+
+inicio
+
+  i <- 1
+  menor <- 0
+  maior <- 0
+
+  enquanto i <= 10 faca
+    escreval("digite a idade da pessoa ", i": ")
+    leia(idade)
+      se idade >= 18 entao
+        maior <- maior + 1
+      senao 
+        menor <- menor + 1 
+      fimse
+    i <- i + 1  
+  fimenquanto  
+
+  escreval("a quantidade de maiores de idade é de: ", maior)
+
+  escreval("a quantidade de menores de idade é de: ", menor)
+  
+
+fimalgoritmo
