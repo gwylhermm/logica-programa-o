@@ -1,0 +1,17 @@
+algoritmo "processoSeletivo"
+
+var
+   nota: real
+
+inicio
+   
+   escreval("digite sua nota: ")
+   leia(nota)
+
+   se nota >= 70 entao
+     escreval("Parabens, voce foi aprovado!!!")
+   senao 
+     escreval("Voce foi reprovado!!")  
+   fimse  
+
+fimalgoritmo

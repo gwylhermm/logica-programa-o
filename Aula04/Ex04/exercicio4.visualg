@@ -1,0 +1,23 @@
+algoritmo "Velocidade_veículo"
+
+var
+   velocidade: real
+
+inicio
+   
+   escreval("digite aqui a sua velocidade: ")
+   leia(velocidade)
+
+   se velocidade >= 80 e velocidade <= 85 entao
+      escreval("veículo esta rapido, por favor diminua sua velocidade")
+   senao
+      se velocidade > 85 entao
+         escreval("multado por alta velocidade!!!")
+      senao 
+         escreval("parabens, voce esta na velocidade correta!!!")   
+      fimse      
+   fimse
+
+ 
+
+fimalgoritmo

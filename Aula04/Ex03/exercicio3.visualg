@@ -1,0 +1,25 @@
+algoritmo "ComparaçãoPreços"
+
+var
+   produto1, produto2: inteiro
+
+inicio
+  escreval("digite o preço do primeiro produto: ")
+  leia(produto1)
+
+  escreval("digite o preço do segundo produto: ")
+  leia(produto2)
+
+  se produto1 > produto2 entao
+     escreval("produto1 é mais caro que produto2")
+  senao
+    se produto2 > produto1 entao
+       escreval("produto2 é mais caro que produto1")
+    senao 
+      se produto1 = produto2 entao
+         escreval("ambos os produtos tem o mesmo preço") 
+      fimse     
+    fimse   
+  fimse
+
+fimalgoritmo

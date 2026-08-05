@@ -1,0 +1,16 @@
+algoritmo "controleEstoque"
+
+var
+   quantProduto: inteiro
+
+inicio
+  escreval("digite a quantidade do produto no estoque: ")
+  leia(quantProduto)
+
+  se quantProduto <= 10 entao
+     escreval("Reposição necessária")
+  senao
+     escreval("Estoque suficiente.")
+  fimse
+
+fimalgoritmo

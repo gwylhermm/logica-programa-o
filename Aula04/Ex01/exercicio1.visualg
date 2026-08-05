@@ -1,0 +1,16 @@
+algoritmo "SistemaEmprestimo"
+
+var
+   idade: inteiro
+
+inicio
+  escreval("digite sua idade para analise de emprestimo: ")
+  leia(idade)
+
+  se idade >= 18 entao
+     escreval("seu emprestimo foi aprovado!!!")
+  senao
+     escreval("seu emprestimo foi negado.")
+  fimse
+
+fimalgoritmo
