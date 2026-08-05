@@ -1,0 +1,33 @@
+algoritmo "caixa eletronico"
+
+var
+  saldo, sacar: real
+  sair: inteiro
+
+inicio
+
+  saldo <- 1000
+  sacar <- 0
+
+  escreval("bem vindo, seu saldo é de:R$", saldo)
+
+  enquanto saldo <> 0 faca
+    escreval("digite o valor que deseja sacar:R$")
+    escreval("ou digite 0 para sair: ")
+    leia(sacar)
+
+    se sacar = 0 entao
+      interrompa
+    fimse  
+
+    se sacar > saldo entao
+      escreval("saldo insuficiente")
+    senao
+      saldo <- saldo - sacar
+      escreval("saque realizado com sucesso")
+      escreval("saldo atual: ", saldo)
+    fimse  
+
+  fimenquanto
+
+fimalgoritmo

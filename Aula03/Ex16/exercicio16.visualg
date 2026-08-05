@@ -1,0 +1,60 @@
+algoritmo "eleiçãoTurma"
+var
+  i, joao, maria, carlos, voto, invalidos: inteiro
+
+
+inicio
+  i <- 1
+  joao <- 0
+  maria <- 0
+  carlos <- 0
+  invalidos <- 0
+
+  enquanto i <= 20 faca
+    escreval("em quem deseja votar?")
+    escreval("digite 1 para votar em Joao: ")
+    escreval("digite 2 para votar em Maria: ")
+    escreval("digite 3 para votar em Carlos: ")
+    escreval("voto ", i, ":")
+    leia(voto)
+
+    se voto = 1 entao
+      joao <- joao + 1
+
+    senao 
+      se voto = 2 entao
+         maria <- maria + 1
+      senao
+         se voto = 3 entao
+           carlos <- carlos + 1
+         senao
+           se voto > 3 entao
+             invalidos <- invalidos + 1
+           fimse  
+         fimse     
+      fimse     
+    fimse
+    i <- i + 1
+  fimenquanto
+
+  escreval("votos em joao: ", joao)
+  escreval("votos em maria: ", maria)
+  escreval("votos em carlos ", carlos)
+  escreval("votos inválidos: ", invalidos)
+
+  se joao > maria e joao > carlos entao
+    escreval("JOAO FOI O GRANDE VENCEDOR!!!")
+    senao
+     se maria > joao e maria > carlos entao
+       escreval("MARIA FOI A GRANDE VENCEDORA!!!")
+     senao
+       escreval("CARLOS FOI GRANDE VENCEDOR!!!")  
+     fimse  
+  fimse  
+
+
+
+    
+
+
+fimalgoritmo

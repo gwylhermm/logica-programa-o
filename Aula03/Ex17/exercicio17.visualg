@@ -1,0 +1,35 @@
+algoritmo "contador de aprovados"
+var
+  aluno, aprovados, reprovados, i: inteiro
+  media: real
+
+inicio
+  aprovados <- 0
+  reprovados <- 0
+  i <- 1
+
+  escreval("Digite a quantidade de alunos da turma: ")
+  leia(aluno)
+
+  enquanto aluno > 0 faca
+    escreval("digite a media do aluno ", i, ":")
+    leia(media)
+
+    se media >= 7 entao
+      aprovados <- aprovados + 1
+    senao
+      reprovados <- reprovados + 1  
+    fimse
+
+    i <- i + 1
+    aluno <- aluno - 1
+    
+  fimenquanto
+
+  escreval("total de alunos aprovados: ", aprovados)
+  escreval("total de alunos reprovados: ", reprovados)
+
+
+
+
+fimalgoritmo

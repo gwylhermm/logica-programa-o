@@ -1,0 +1,28 @@
+algoritmo "login"
+var
+  login: caracter
+  senhaSalva, senha: inteiro
+
+inicio
+  
+  senhaSalva <- 123
+
+  escreval("digite seu login: ")
+  leia(login)
+
+  escreval("seja muito bem vindo, ", login)
+  escreval("por favor, digite sua senha: ")
+  leia(senha)
+
+  se senha = senhaSalva entao
+    escreval("Acesso permitido.")
+  senao 
+    enquanto senha <> senhaSalva faca
+      escreval("senha incorreta, tente novamente: ")
+      leia(senha)
+    fimenquanto  
+    escreval("Acesso permitido.")
+  fimse
+
+
+fimalgoritmo

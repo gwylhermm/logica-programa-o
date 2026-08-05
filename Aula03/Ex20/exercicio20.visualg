@@ -1,0 +1,40 @@
+algoritmo "pesquisa de satisfação"
+
+var
+  somaNotas, totalNotas, tot5, tot1, nota: inteiro
+
+inicio
+   somaNotas <- 0
+   totalNotas <- -1
+   tot5 <- 0
+   tot1 <- 0
+   nota <- 1
+
+   enquanto nota <> 0 faca
+     escreval("digite sua nota de satisfação: ")
+     escreval("digite 0 para sair: ")
+     leia(nota)
+
+     se nota = 5 entao
+       tot5 <- tot5 + 1
+     senao
+       se nota = 1 entao
+         tot1 <- tot1 + 1      
+       fimse   
+     fimse
+
+     somaNotas <- somaNotas + nota
+     totalNotas <- (totalNotas + 1) 
+
+   fimenquanto  
+
+   escreval("quantidade de respostas: ", totalNotas)
+   escreval("media das notas: ", somaNotas / totalNotas)
+   escreval("quantos responderam 5: ", tot5)
+   escreval("quantos responderam 1: ", tot1)
+
+
+
+
+
+fimalgoritmo
