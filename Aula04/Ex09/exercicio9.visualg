@@ -1,0 +1,33 @@
+algoritmo "controleAcesso"
+
+var
+  funcionario, cracha, acompanhado, autorizacao: caracter
+
+inicio
+
+  escreval("voce é funcionario? (V/F): ")
+  leia(funcionario)
+
+  escreval("possui cracha? (V/F): ")
+  leia(cracha)
+
+  escreval("esta acompanhado? (V/F): ")
+  leia(acompanhado)
+
+  escreval("possui autorização? (V/F): ")
+  leia(autorizacao)
+
+  se funcionario = "v" e cracha = "v" entao
+     escreval("Acesso liberado!!!")
+  senao
+    se acompanhado = "v" ou autorizacao = "v" entao
+       escreval("Acesso liberado")
+    senao
+       escreval("Acesso negado.")
+    fimse   
+  fimse
+  
+
+  
+
+fimalgoritmo

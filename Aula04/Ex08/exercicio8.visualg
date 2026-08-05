@@ -1,0 +1,20 @@
+algoritmo "clube_beneficios"
+
+var
+  cliente, valorCompra: caracter
+
+inicio
+  
+  escreval("É um cliente VIP? (V/F): ")
+  leia(cliente)
+
+  escreval("Sua compra foi maior que R$300? (V/F): ")
+  leia(valorCompra)
+
+  se cliente = "v" e valorCompra = "v" entao
+    escreval("voce ganhou um desconto!!!")
+  senao 
+    escreval("desconto negado.")
+  fimse  
+
+fimalgoritmo

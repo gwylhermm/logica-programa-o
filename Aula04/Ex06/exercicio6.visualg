@@ -1,0 +1,20 @@
+algoritmo "acesso_laboratorio"
+
+var
+   matriculado, cracha: caractere
+
+inicio
+
+   escreval("Está matriculado? (V/F): ")
+   leia(matriculado)
+
+   escreval("Possui crachá? (V/F): ")
+   leia(cracha)
+
+   se (matriculado = "V") e (cracha = "V") entao
+      escreval("Entrada permitida.")
+   senao
+      escreval("Entrada negada.")
+   fimse
+
+fimalgoritmo

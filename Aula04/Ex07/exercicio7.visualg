@@ -1,0 +1,20 @@
+algoritmo "login_sistema"
+
+var
+  administrador, senha: caracter
+
+inicio
+
+  escreval("voce é administrador? (V/F): ")
+  leia(administrador)
+
+  escreval("tem uma senha valida? (V/F): ")
+  leia(senha)
+
+  se administrador = "v" ou senha = "v" entao
+    escreval("acesso liberado!!!")
+  senao
+    escreval("acesso negado!!!")
+  fimse    
+
+fimalgoritmo
