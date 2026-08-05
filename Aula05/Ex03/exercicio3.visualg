@@ -1,0 +1,42 @@
+algoritmo "Faixa_Desconto"
+
+var 
+   
+  ValorCompra, desconto: real
+
+inicio
+  
+  escreval("digite aqui o valor da sua compra:R$")
+  leia(ValorCompra)
+
+  se ValorCompra <= 100 entao
+     escreval("valor da compra:R$", ValorCompra)
+     escreval("sem desconto.")
+  senao
+     se ValorCompra > 100 e ValorCompra <= 300 entao
+        escreval("valor da compra:R$", ValorCompra)
+        escreval("voce ganhou 5% de desconto.")
+        
+        desconto <- 5 / 100 * ValorCompra
+
+        escreval("valor com desconto:R$", ValorCompra - desconto) 
+     senao
+        se ValorCompra > 300 e ValorCompra <= 600 entao
+           escreval("valor da compra:R$", ValorCompra)
+           escreval("voce ganhou 10% de desconto")
+
+           desconto <- 10 / 100 * ValorCompra
+
+           escreval("valor com desconto:R$" ValorCompra - desconto)
+        senao
+           escreval("valor da compra:R$", ValorCompra)
+           escreval("voce ganhou 15% de desconto")  
+
+           desconto <- 15 / 100 * ValorCompra
+
+           escreval("valor com desconto:R$", ValorCompra - desconto)
+        fimse   
+     fimse   
+  fimse
+  
+fimalgoritmo

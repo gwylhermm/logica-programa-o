@@ -1,0 +1,30 @@
+algoritmo "Imposto_Renda"
+
+var 
+  salario: real
+  
+  
+inicio
+  
+  escreval("digite aqui seu salario:R$")
+  leia(salario)
+
+  se salario <= 2500 entao
+     escreval("ISENTO")
+  senao
+     se salario > 2500 e salario <= 55000 entao
+        escreval("FAIXA 1")
+     senao
+        se salario > 55000 e salario <= 58000 entao
+           escreval("FAIXA 2")
+        senao
+           escreval("FAIXA 3")   
+        fimse
+     fimse   
+  fimse
+  
+
+
+  
+
+fimalgoritmo
