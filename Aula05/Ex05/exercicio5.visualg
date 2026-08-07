@@ -1,0 +1,45 @@
+algoritmo "conversor_unidade"
+
+var 
+  opcao: inteiro
+  metros, quilos, horas, dias: real
+
+inicio
+   
+  escreval("===CONVERSOR DE UNIDADE===")
+  escreval("---------------------------")
+  escreval("1- metros -> centimetros")
+  escreval("2- quilos -> gramas")
+  escreval("3- horas -> minutos")
+  escreval("4- dias -> horas")
+  escreval("digite a opção desejada:[1a4]")
+  leia(opcao)
+  escreval("---------------------------")
+
+  escolha opcao
+    caso 1 
+      escreval("digite a quantidade de metros que deseja converter: ")
+      leia(metros)
+
+      escreval("conversao: ", metros * 100,"cm")
+    caso 2
+      escreval("digite a quantidade de quilos que deseja converter: ")
+      leia(quilos)
+
+      escreval("conversao: ", quilos * 1000,"gramas")  
+    caso 3
+      escreval("digite a quantidade de horas que deseja converter: ")
+      leia(horas)
+
+      escreval("conversao: ", horas * 60,"minutos")
+    caso 4
+      escreval("digite a quantidade de dias que deseja converter: ")
+      leia(dias)
+
+      escreval("conversao: ", dias * 24,"horas")
+    outrocaso 
+      escreval("opção inválida!!!")  
+
+  fimescolha
+  
+fimalgoritmo

@@ -1,0 +1,50 @@
+algoritmo "calculo_areas"
+
+var 
+  base, altura, raio, lado: real
+  opcao: inteiro
+
+inicio
+  escreval("====CALCULADORA DE AREAS====")
+  escreval("-----------------------------")
+  escreval("1 - quadrado")
+  escreval("2 - retangulo")
+  escreval("3 - triangulo")
+  escreval("4 - circulo")
+  escreval("escolha uma opção para calcular as areas:[1a4]")
+  leia(opcao)
+  escreval("-----------------------------")
+
+  escolha opcao
+    caso 1
+      escreval("digite aqui o lado do seu quadrado: ")
+      leia(lado)
+      escreval("a area do quadrado: ", lado * lado)
+    caso 2
+      escreval("digite a base do seu retangulo:")
+      leia(base)
+
+      escreval("digite a altura do seu retangulo:")
+      leia(altura)
+
+      escreval("area do retangulo:", base * altura)
+    caso 3
+      escreval("digite a base do seu triangulo: ")
+      leia(base)
+
+      escreval
+      ("digite a altura do seu triangulo: ")
+      leia(altura)
+
+      escreval("area do triangulo: ", (base * altura) / 2)
+    caso 4
+      escreval("digite o raio do circulo: ")
+      leia(raio)
+
+      escreval("area do circulo: ", 3.14 * (raio * raio))   
+    outrocaso
+      escreval("opção inválida!!!")
+
+  fimescolha  
+  
+fimalgoritmo
